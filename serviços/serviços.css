@@ -1,0 +1,352 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&family=Titan+One&display=swap');
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    background-image: url(../assets/plasma4.jpg);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta a logo quando o mouse passa por cima */
+}
+
+/* Menu Desktop */
+.desktop-nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.desktop-nav a {
+    color: #f4d400;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+.desktop-nav a:hover {
+    transform: scale(1.1);
+}
+
+.desktop-nav a:hover {
+    color: white;
+}
+
+/* Menu Mobile */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.368);
+    padding: 20px;
+    display: none;
+}
+
+.mobile-nav a {
+    color: #f4d400;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+.mobile-nav a:hover {
+    transform: scale(1.1);
+}
+
+.mobile-nav a:hover {
+    color: white;
+}
+
+/* Ícone do Menu */
+.menu-icon {
+    font-size: 30px;
+    color: #f4d400;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: rotate(90deg); /* Rotaciona o ícone do menu quando o mouse passa por cima */
+}
+
+/* foto de fundo */
+.foto-section {
+    background-image: url(../assets/background4.jpg);
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    margin-bottom: -40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+
+}
+
+/* Menu - Estilo padrão, oculto no mobile */
+nav {
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu no desktop */
+    align-items: center;
+    width: 100%;
+    background-color: #00000000;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4d400;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* ---------------------------------- CONTEÚDO PRINCIPAL ---------------------------------- */
+
+/* Estilo do conteúdo principal */
+main {
+    margin-top: 80px; /* Para dar espaço para o header fixo */
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+
+}
+
+/* Grid de fotos */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.foto-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foto-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.foto-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.foto-item:hover img {
+    opacity: 0.7;
+}
+
+/* ---------------------------------- REDES SOCIAIS ---------------------------------- */
+
+/* Estilo das redes sociais */
+#redes-sociais {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: #f4d400;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.social-icons a {
+    font-size: 30px;
+    margin: 0 15px;
+    transition: transform 0.3s;
+}
+
+
+.social-icons img {
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+}
+.social-icons img:hover {
+    transform: scale(1.5);
+}
+
+/* ---------------------------------- FOOTER ---------------------------------- */
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.016);
+    color: white;
+}
+
+footer a {
+    color: #f4d400;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white; /* Muda a cor do link ao passar o mouse */
+}
+
+
+/* ---------------------------------- ESTILOS PARA VERSÃO MOBILE ---------------------------------- */
+
+@media (max-width: 768px) {
+    /* Exibe o ícone do menu no mobile */
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%) center; /* Centraliza o ícone */
+        z-index: 10;
+    }
+
+    /* Menu oculto no mobile */
+    nav ul {
+        display: none; /* Oculta os itens do menu no mobile */
+    }
+
+    /* Quando o menu estiver ativo, ele será mostrado */
+    nav.active ul {
+        display: flex; /* Exibe os itens de menu */
+        flex-direction: column; /* Alinha os itens de forma vertical */
+        align-items: center;
+        margin-top: 60px;
+        background-color: rgba(0, 0, 0, 0.01);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        z-index: 100;
+    }
+
+    /* Ajusta o layout das fotos para 2 colunas no mobile */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+/* Animação de fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para telas muito pequenas (ex: smartphones pequenos) */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 foto por linha */
+    }
+}
+
+
+    /* Responsividade */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+
+    .menu-items.show {
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+        background-color: #000000e9;
+        border-radius: 30px;
+        align-items: center;
+    }
+
+    .menu-items {
+        display: none;
+    }
+ 
+    
+    #redes-sociais {
+        font-size: 15px;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+    
+    }
+}
+

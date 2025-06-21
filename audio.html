@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio</title>
+</head>
+<body>
+    <audio id="audio-player" loop>
+        <source src="assets/Black Sabbath - Paranoid.mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+    </audio>
+
+    <script>
+        const audioPlayer = document.getElementById("audio-player");
+
+        // Tenta tocar o áudio assim que a página for carregada
+        document.addEventListener("DOMContentLoaded", function() {
+            try {
+                audioPlayer.play(); // Tenta iniciar a música
+            } catch (e) {
+                console.log("Erro ao iniciar o áudio automaticamente: " + e);
+            }
+        });
+
+        // Verifica se o tempo de áudio já foi salvo e retoma de onde parou
+        const savedTime = localStorage.getItem('audioTime');
+        if (savedTime) {
+            audioPlayer.currentTime = savedTime;
+        }
+
+        // Sempre que o áudio for pausado ou terminar, salva o tempo no LocalStorage
+        audioPlayer.addEventListener('timeupdate', function() {
+            localStorage.setItem('audioTime', audioPlayer.currentTime);
+        });
+    </script>
+</body>
+</html>

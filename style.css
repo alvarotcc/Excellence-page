@@ -1,0 +1,383 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&family=Titan+One&display=swap');
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    background-image: url(assets/plasma3.jpg);
+    font-family: Arial, sans-serif;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
+}
+
+
+/* Logo */
+.logo img {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta a logo quando o mouse passa por cima */
+}
+
+/* Menu Desktop */
+.desktop-nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.desktop-nav a {
+    color: #f4d400;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+.desktop-nav a:hover {
+    transform: scale(1.1);
+}
+
+.desktop-nav a:hover {
+    color: white;
+}
+
+/* Menu Mobile */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.368);
+    padding: 20px;
+    display: none;
+}
+
+.mobile-nav a {
+    color: #f4d400;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+.mobile-nav a:hover {
+    transform: scale(1.1);
+}
+
+.mobile-nav a:hover {
+    color: white;
+}
+
+/* Ícone do Menu */
+.menu-icon {
+    font-size: 30px;
+    color: #f4d400;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: rotate(90deg); /* Rotaciona o ícone do menu quando o mouse passa por cima */
+}
+
+/* Vídeo de fundo */
+.video-section {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.3;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Seção de Serviços */
+.services-section {
+    margin-top: 20px;
+    width: 100%;
+    margin: 1px auto 1px;
+    text-align: center;
+}
+
+.section-title {
+    color: #f4d400;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.section-title:hover {
+    transform: scale(1.1); /* Aumenta o título quando o mouse passa por cima */
+}
+
+/* Estilo para exibir apenas um serviço por vez */
+.services-carousel {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service.active {
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Aumenta o item do serviço ao passar o mouse */
+}
+
+.service-img img {
+    width: 70%;
+    border-radius: 30px;
+    margin-left: -20%;
+    transition: transform 0.3s ease;
+}
+
+.service-img img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+.service-text {
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-text:hover {
+    transform: translateX(10px); /* Move o texto ao passar o mouse */
+}
+
+.service-text h3 {
+    color: #f4d400;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+    font-size: 25px;
+}
+
+.service-text h3:hover {
+    color: white; /* Muda a cor do título ao passar o mouse */
+}
+
+.service-text p {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    
+}
+
+/* Seção de Comentários */
+.comments-section {
+    text-align: center;
+    padding: 50px 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+   
+}
+
+.comments-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.comment {
+    display: none;
+    margin: 25px 10px;
+}
+
+.comment.active {
+    display: block;
+}
+
+
+.comment img {
+    width: 450px;
+    height: 350px;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.comment img:hover {
+    transform: scale(1.1); /* Aumenta a imagem do cliente ao passar o mouse */
+}
+
+ /* ---------------------------------- REDES SOCIAIS ---------------------------------- */
+
+/* Estilo das redes sociais */
+#redes-sociais {
+    margin-top: 2px;
+    margin-bottom: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: #f4d400;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.social-icons a {
+    font-size: 30px;
+    margin: 0 15px;
+    transition: transform 0.3s;
+}
+
+
+.social-icons img {
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+}
+.social-icons img:hover {
+    transform: scale(2.1);
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.016);
+    color: white;
+}
+
+footer a {
+    color: #f4d400;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white; /* Muda a cor do link ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+
+    .menu-items.show {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0);
+        align-items: center;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .service-text {
+        width: 100%;
+        text-align: center;
+       
+    }
+
+    .service-text h3 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .service-text p {
+        font-size: 14px;
+    }
+
+    .logo img {
+        margin: 0 auto;
+        display: block;
+
+    }
+
+    .comments-section {
+        font-size: 18px;
+    }
+
+    .comment img {
+        width: 90%;
+        height: 90%;
+    }
+    
+    #redes-sociais {
+        font-size: 15px;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+    
+    }
+}

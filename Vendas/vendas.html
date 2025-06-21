@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kron Galery - Vendas</title>
+    <link rel="icon" href="../assets/logo-Excellence.png"/>
+    <link rel="stylesheet" href="vendas.css">
+</head>
+<body>
+
+    <!-- Iframe para carregar o áudio -->
+    <iframe src="../audio.html" id="audio-iframe" style="display:none;"></iframe>
+
+ <!-- Cabeçalho -->
+ <header>
+    <div class="logo">
+        <img src="../assets/logo-Excellence.png" alt="Logo">
+    </div>
+    <nav class="desktop-nav">
+        <a href="../index.html">Home</a>
+        <a href="../galeria/galeria.html">Galeria</a>
+        <a href="vendas.html">vendas</a>
+        <a href="../serviços/serviços.html">Serviços</a>
+        <a href="../Contato/contato.html">Contato</a>
+    </nav>
+    <nav class="mobile-nav">
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <div class="menu-items" id="menu-items">
+            <a href="../index.html">Home</a>
+            <a href="../galeria/galeria.html">Galeria</a>
+            <a href="vendas.html">vendas</a>
+            <a href="../serviços/serviços.html">Serviços</a>
+            <a href="../Contato/contato.html">Contato</a>
+        </div>
+    </nav>
+</header>
+
+    <!-- CONTEÚDO PRINCIPAL (vendas de veículos) -->
+    <main>
+        <h1>Vendas de Veículos e Acessórios</h1>
+        <section class="grid">
+            <!-- Veículos -->
+            <div class="foto-item" onclick="openModal('car1')">
+                <img src="../assets/carro1.jpg" alt="Carro 1">
+                <p>Porche - R$ 500.000</p>
+            </div>
+            <div class="foto-item" onclick="openModal('car2')">
+                <img src="../assets/carro2.jpg" alt="Carro 2">
+                <p>camaro ss - R$ 110.000</p>
+            </div>
+            <div class="foto-item" onclick="openModal('car3')">
+                <img src="../assets/carro3.jpg" alt="Carro 3">
+                <p>lamborguini - R$ 1.025.000</p>
+            </div>
+            <div class="foto-item" onclick="openModal('car4')">
+                <img src="../assets/carro4.jpg" alt="Carro 4">
+                <p>ford 500 - R$ 140.000</p>
+            </div>
+
+            <!-- Rodas Customizadas -->
+            <div class="foto-item" onclick="openModal('wheel1')">
+                <img src="../assets/roda1.jpg" alt="Roda 1">
+                <p>Roda Customizada 1 - R$ 2.500</p>
+            </div>
+            <div class="foto-item" onclick="openModal('wheel2')">
+                <img src="../assets/roda2.jpg" alt="Roda 2">
+                <p>Roda Customizada 2 - R$ 3.000</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL (para visualizar mais fotos e informações) -->
+    <div id="car1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('car1')">&times;</span>
+            <img src="../assets/carro5.jpg" alt="Carro 1">
+            <img src="../assets/carro6.jpg" alt="Carro 1">
+            <img src="../assets/carro7.jpg" alt="Carro 1">
+            <img src="../assets/carro8.jpg" alt="Carro 1">
+            <img src="../assets/carro9.jpg" alt="Carro 1">
+            <img src="../assets/carro10.jpg" alt="Carro 1">
+            <div class="descricao">
+                <p>Porche - R$ 500.000</p>
+                <p>carro impecavel, unico dono, detalhes em couro, etc (detalhes do carro, características, etc.)</p>
+                <a href="https://wa.me/5511999999999" class="whatsapp-btn" target="_blank">Fale conosco no WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="car2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('car2')">&times;</span>
+            <img src="../assets/veiculo2_1.jpg" alt="Carro 2">
+            <img src="../assets/veiculo2_2.jpg" alt="Carro 2">
+            <div class="descricao">
+                <p>Camaro - R$ 110.000</p>
+                <p>carro impecavel, unico dono, detalhes em couro, etc (detalhes do carro, características, etc.)</p>
+                <a href="https://wa.me/5511999999999" class="whatsapp-btn" target="_blank">Fale conosco no WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodas -->
+    <div id="wheel1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('wheel1')">&times;</span>
+            <img src="../assets/roda4.jpg" alt="Roda 1">
+            <img src="../assets/roda5.jpg" alt="Roda 1">
+            <img src="../assets/roda6.jpg" alt="Roda 1">
+            <img src="../assets/roda7.jpg" alt="Roda 1">
+            <div class="descricao">
+                <p>Roda Customizada 1 - R$ 2.500</p>
+                <p>Descrição da roda... (detalhes sobre a roda, personalização, etc.)</p>
+                <a href="https://wa.me/5511999999999" class="whatsapp-btn" target="_blank">Fale conosco no WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="wheel2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('wheel2')">&times;</span>
+            <img src="../assets/roda2_1.jpg" alt="Roda 2">
+            <img src="../assets/roda2_2.jpg" alt="Roda 2">
+            <div class="descricao">
+                <p>Roda Customizada 2 - R$ 3.000</p>
+                <p>Descrição da roda... (detalhes sobre a roda, personalização, etc.)</p>
+                <a href="https://wa.me/5511999999999" class="whatsapp-btn" target="_blank">Fale conosco no WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- REDES SOCIAIS -->
+    <section id="redes-sociais">
+        <h2>Siga nossas páginas e fique por dentro das novidades</h2>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="../assets/facebook.png"></a>
+            <a href="#" class="social-icon"><img src="../assets/instagram.png"></a>
+            <a href="#" class="social-icon"><img src="../assets/youtube.png"></a>
+            <a href="#" class="social-icon"><img src="../assets/gmail.png"></a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Feito com ❤ por <a href="https://alvarotcc.github.io/Fast-Work" target="_blank">Fast Work</a></p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="vendas.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,149 @@
+/* RESET DE ESTILOS GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../assets/plasma4.jpg);
+    color: #f4d400;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garantir que o body ocupe toda a altura da tela */
+}
+
+/* Centralizando logo no topo */
+header {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 20px 0;
+    background-color: #00000067;
+}
+
+header .logo img {
+    height: 80px; /* Ajuste o tamanho da logo conforme necessário */
+}
+
+/* Estilo do conteúdo principal (centralizado) */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do main */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+}
+
+/* Estilizando apenas o <a> principal como botão */
+a.main-button {
+    display: inline-block;
+    background-color: #f4d400;
+    color: #b52121;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.main-button:hover {
+    background-color: #e0b900;
+    transform: scale(1.1); /* Efeito de "aumento" ao passar o mouse */
+}
+
+/* ---------------------------------- REDES SOCIAIS ---------------------------------- */
+
+/* Estilo das redes sociais */
+#redes-sociais {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: #f4d400;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.social-icons a {
+    font-size: 30px;
+    margin: 0 15px;
+    transition: transform 0.3s;
+}
+
+
+.social-icons img {
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+}
+.social-icons img:hover {
+    transform: scale(1.5);
+}
+
+/* ---------------------------------- FOOTER ---------------------------------- */
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.016);
+    color: white;
+}
+
+footer a {
+    color: #f4d400;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white; /* Muda a cor do link ao passar o mouse */
+}
+
+/* ---------------------------------- ESTILOS PARA VERSÃO MOBILE ---------------------------------- */
+
+@media (max-width: 768px) {
+    /* Exibe o ícone do menu no mobile */
+
+
+    #redes-sociais {
+        font-size: 15px;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+    
+    }
+
+    
+}
+
+/* Animação de fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para telas muito pequenas (ex: smartphones pequenos) */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 foto por linha */
+    }
+}

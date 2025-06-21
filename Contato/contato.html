@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kron studio Contato</title>
+    <link rel="icon" href="../assets/logo-Excellence.png"/>
+    <link rel="stylesheet" href="contato.css">
+
+    <!-- Adicionando o CSS do Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Adicionando o JS do Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+
+     <!-- Iframe para carregar o áudio -->
+     <iframe src="../audio.html" id="audio-iframe" style="display:none;"></iframe>
+
+
+    <!-- HEADER -->
+    <header>
+        <!-- LOGO (canto superior esquerdo) -->
+        <div class="logo">
+            <img src="../assets/logo-Excellence.png" alt="Logo">
+        </div>
+
+        <!-- ÍCONE DO MENU (aparece apenas na versão mobile) -->
+        <span class="menu-icon" id="menu-icon">☰</span>
+
+        <!-- ITENS DO MENU (ficam ocultos na versão mobile) -->
+        <nav id="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../galeria/galeria.html">Galeria</a></li>
+                <li><a href="../Vendas/vendas.html">vendas</a></li>
+                <li><a href="../serviços/serviços.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <h1>Contato</h1>
+        <div class="contato-container">
+            <div class="endereco">
+                <p>Av. Irineu Bornhausen, 1420 - São João, Itajaí - SC, 88304-360</p>
+            </div>
+            
+            <!-- Adicionando o mapa com Leaflet -->
+            <div id="map" class="mapa"></div> <!-- O mapa ocupará uma altura de 400px -->
+
+            <div class="botoes-container">
+                <button id="whatsapp-btn">WhatsApp</button>
+                <button id="fale-conosco-btn">Fale Conosco</button>
+            </div>
+    
+            <!-- Formulário de Contato -->
+            <div id="form-container" class="form-container">
+                <form id="contato-form" action="processa_formulario.php" method="POST">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+        
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+        
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- REDES SOCIAIS -->
+    <section id="redes-sociais">
+        <h2>Siga nossas páginas e fique por dentro das novidades</h2>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="../assets/facebook.png"></a>
+            <a href="#" class="social-icon"><img src="../assets/instagram.png"></a>
+            <a href="#" class="social-icon"><img src="../assets/youtube.png"></a>
+            <a href="#" class="social-icon"><img src="../assets/gmail.png"></a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Feito com ❤ por <a href="https://alvarotcc.github.io/Fast-Work" target="_blank">Fast Work</a></p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="contato.js"></script>
+    <script>
+        // Inicializando o mapa com Leaflet
+        var map = L.map('map').setView([-26.90251, -48.67005], 15); // Defina as coordenadas e o nível de zoom
+
+        // Adicionando o Tile Layer (mapa do OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Marcando a localização com um marcador
+        L.marker([-26.90264557607146, -48.67001604575828]).addTo(map)
+            .bindPopup('Av. Irineu Bornhausen, 1420 - São João, Itajaí - SC')
+            .openPopup();
+    </script>
+</body>
+</html>
