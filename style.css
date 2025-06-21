@@ -10,10 +10,11 @@
 
 /* Estilo geral do corpo */
 body {
-    background-image: url(assets/plasma3.jpg);
+    background: linear-gradient(rgba(75, 4, 4, 0.5), rgba(6, 44, 1, 0.5)), url('assets/plasma3.jpg');
     font-family: Arial, sans-serif;
     background-attachment: fixed;
-    color: white;
+    background-position: center;
+    color: rgb(4, 2, 90);
 }
 
 /* Estilo do cabeçalho */
