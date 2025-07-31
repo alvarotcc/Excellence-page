@@ -1,4 +1,4 @@
-<h1 align="center"> Landing page Kron </h1>
+<h1 align="center"> Landing page Excellence </h1>
 
 <p align="center">
 Buscando novos horizontes com banco de dados e IA, de forma que pudéssemos preparar páginas complementares e alimentar nosso portifólio com uma landing page completa e com varioas paginas lincadas. este site foi construido para tentar monetizar os projetos e investir cada vez mais nos estudos. <br/>
@@ -19,7 +19,7 @@ Buscando novos horizontes com banco de dados e IA, de forma que pudéssemos prep
 <br>
 
 <p align="center">
-  <img alt="projeto Excellence" src="./assets/Preview.jpg" width="100%">
+  <img alt="Projeto Excellence" src="./assets/Preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
