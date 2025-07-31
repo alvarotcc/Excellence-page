@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kron studio Contato</title>
+    <title>Excellence Contato</title>
     <link rel="icon" href="../assets/logo-Excellence.png"/>
     <link rel="stylesheet" href="contato.css">
 
@@ -46,7 +46,7 @@
         <h1>Contato</h1>
         <div class="contato-container">
             <div class="endereco">
-                <p>Av. Irineu Bornhausen, 1420 - São João, Itajaí - SC, 88304-360</p>
+                <p>Rua General João Manuel, 1155 - Centro, Flores da Cunha - RS, 95270-000</p>
             </div>
             
             <!-- Adicionando o mapa com Leaflet -->
@@ -98,7 +98,7 @@
     <script src="contato.js"></script>
     <script>
         // Inicializando o mapa com Leaflet
-        var map = L.map('map').setView([-26.90251, -48.67005], 15); // Defina as coordenadas e o nível de zoom
+        var map = L.map('map').setView([-29.026445, -51.186878], 15); // Defina as coordenadas e o nível de zoom
 
         // Adicionando o Tile Layer (mapa do OpenStreetMap)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -106,8 +106,8 @@
         }).addTo(map);
 
         // Marcando a localização com um marcador
-        L.marker([-26.90264557607146, -48.67001604575828]).addTo(map)
-            .bindPopup('Av. Irineu Bornhausen, 1420 - São João, Itajaí - SC')
+        L.marker([-29.026445, -51.186878]).addTo(map)
+            .bindPopup('Rua General João Manuel, 1155 - Centro, Flores da Cunha - RS')
             .openPopup();
     </script>
 </body>
