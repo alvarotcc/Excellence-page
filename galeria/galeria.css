@@ -250,7 +250,7 @@ footer a:hover {
         cursor: pointer;
         position: absolute;
         top: 20px;
-        left: 50%;
+        left: 45%;
         transform: translateX(-50%) center; /* Centraliza o ícone */
         z-index: 10;
     }
