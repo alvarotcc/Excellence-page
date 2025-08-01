@@ -10,11 +10,13 @@
 
 /* Estilo geral do corpo */
 body {
-    background: linear-gradient(rgba(75, 4, 4, 0.5), rgba(6, 44, 1, 0.5)), url('assets/plasma3.jpg');
+    background-image: url(assets/backgroundExellence.jpg);
     font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center,top 40px;
     background-attachment: fixed;
-    background-position: center;
-    color: rgb(4, 2, 90);
+    height: 100vh;
 }
 
 /* Estilo do cabeçalho */
@@ -227,6 +229,7 @@ header {
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
     font-size: 25px;
+    color: white;
    
 }
 
@@ -315,14 +318,15 @@ footer a:hover {
 
     .mobile-nav {
         display: flex;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.649);
     }
-    
 
     .menu-items.show {
         display: flex;
+        margin-top: 50px;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: #00000000;
+        border-radius: 30px;
         align-items: center;
     }
 

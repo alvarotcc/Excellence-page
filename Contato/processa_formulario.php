@@ -6,8 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $mensagem = $_POST['mensagem'];
 
-    // Define o destinatário do e-mail (seu e-mail)
-    $para = "alvarotcc01@gmail.com"; // Substitua com seu e-mail
+    // Define o destinatário do e-mail 
+    $para = "alvarotcc01@gmail.com"; // Substitua com  e-mail
     $assunto = "Nova mensagem de contato - Kron Studio";
 
     // Cria o conteúdo do e-mail
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Envia o e-mail
     if (mail($para, $assunto, $conteudo, $headers)) {
         // Redireciona para uma página de sucesso
-        header("Location: sucesso.html"); // Crie uma página de sucesso (opcional)
+        header("Location: sucesso.html"); // página de sucesso
         exit;
     } else {
         // Exibe erro caso o envio falhe

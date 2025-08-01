@@ -1,7 +1,7 @@
 <h1 align="center"> Landing page Excellence </h1>
 
 <p align="center">
-Buscando novos horizontes com banco de dados e IA, de forma que pudéssemos preparar páginas complementares e alimentar nosso portifólio com uma landing page completa e com varioas paginas lincadas. este site foi construido para tentar monetizar os projetos e investir cada vez mais nos estudos. <br/>
+Buscando novos horizontes com banco de dados e IA, de forma que pudéssemos preparar páginas complementares e alimentar nosso portifólio com uma landing page completa e com varias paginas lincadas. este site foi construido para tentar monetizar os projetos e investir cada vez mais nos estudos. <br/>
 
 </p>
 
@@ -41,7 +41,7 @@ O DevLinks é um agregador de links para usar como cartão de visitas online.
 
 ## 🔖 Layout
 
-Você pode testar esse site dentro [DESSE LINK](https://alvarotcc.github.io/page-login). E tambem ficar por dentro de novidades no nosso [perfil do instagram](https://www.instagram.com/fastworksolutions).
+Você pode testar esse site dentro [DESSE LINK](https://alvarotcc.github.io/Excellence-page). E tambem ficar por dentro de novidades no nosso [perfil do instagram](https://www.instagram.com/fastworksolutions).
 
 ## 📲 contato
 

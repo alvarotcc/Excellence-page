@@ -10,8 +10,12 @@
 }
 
 body {
-    background-image: url(../assets/plasma4.jpg);
-    color: #f4d400;
+    background-image: url(../assets/backgroundExellence.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
     font-family: Arial, sans-serif;
     display: flex;
     text-align: center;
@@ -179,7 +183,7 @@ footer a:hover {
         left: 9px;
         padding: 20px;
         z-index: 100;
-        gap: 10px;
+        gap: 15px;
 
     }
 

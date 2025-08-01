@@ -9,7 +9,13 @@
 }
 
 body {
-    background-image: url(../assets/plasma4.jpg);
+    background-image: url(../assets/backgroundExellence.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
     font-family: Arial, sans-serif;
     color: white;
 }
@@ -184,7 +190,7 @@ main {
     padding: 10px;
     font-size: 18px;
     font-family: "Bebas Neue", sans-serif;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
 .foto-item:hover .descricao {
@@ -273,14 +279,14 @@ footer a:hover {
 
     .mobile-nav {
         display: flex;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.649);
     }
 
     .menu-items.show {
         display: flex;
         margin-top: 50px;
         flex-direction: column;
-        background-color: #000000e9;
+        background-color: #00000000;
         border-radius: 30px;
         align-items: center;
     }

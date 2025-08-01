@@ -10,9 +10,15 @@
 
 /* Estilo geral do corpo */
 body {
-    background-image: url(../assets/plasma4.jpg);
+    background-image: url(../assets/backgroundExellence.jpg);
     font-family: Arial, sans-serif;
     color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
 }
 
 /* Estilo do cabeçalho */
@@ -370,14 +376,14 @@ footer a:hover {
 
     .mobile-nav {
         display: flex;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.649);
     }
 
     .menu-items.show {
         display: flex;
         margin-top: 50px;
         flex-direction: column;
-        background-color: #000000e9;
+        background-color: #00000000;
         border-radius: 30px;
         align-items: center;
     }

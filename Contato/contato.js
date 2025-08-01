@@ -5,7 +5,7 @@ document.getElementById('menu-icon').addEventListener('click', function() {
 
 // Botão WhatsApp
 document.getElementById('whatsapp-btn').addEventListener('click', function() {
-    window.location.href = "https://wa.me/5599999999999"; // Substitua pelo número de WhatsApp da empresa
+    window.location.href = "https://wa.me/5551999832081"; // Substitua pelo número de WhatsApp da empresa
 });
 
 // Botão Fale Conosco
